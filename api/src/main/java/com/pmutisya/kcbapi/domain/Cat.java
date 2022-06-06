@@ -18,6 +18,10 @@ public class Cat {
 
     private String color;
 
+    private String creatorCountryName;
+
+    private String creatorIpAddress;
+
     public int getId() {
         return id;
     }
@@ -58,14 +62,24 @@ public class Cat {
         this.color = color;
     }
 
+    public String getCreatorCountryName() {
+        return creatorCountryName;
+    }
+
+    public void setCreatorCountryName(String creatorCountryName) {
+        this.creatorCountryName = creatorCountryName;
+    }
+
+    public String getCreatorIpAddress() {
+        return creatorIpAddress;
+    }
+
+    public void setCreatorIpAddress(String creatorIpAddress) {
+        this.creatorIpAddress = creatorIpAddress;
+    }
+
     @Override
     public String toString() {
-        return "Cat{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", gender='" + gender + '\'' +
-                ", age=" + age +
-                ", color='" + color + '\'' +
-                '}';
+        return "Cat{" + "id=" + id + ", name='" + name + '\'' + ", gender='" + gender + '\'' + ", age=" + age + ", color='" + color + '\'' + ", creatorCountryName='" + creatorCountryName + '\'' + ", creatorIpAddress='" + creatorIpAddress + '\'' + '}';
     }
 }
